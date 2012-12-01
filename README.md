@@ -21,6 +21,6 @@ USAGE
     >>> dt = datetime.datetime(2012, 11, 27, 13, 15)
     >>> unicode(If(TIME > dt, x, unknown2zero(x)))
     TIME,1352895300,GT,x,value,UN,0,x,IF,IF
-    >>> # Alter x,y and z to 0 unknown before given timestamp when value is unknown and sum all together:
+    >>> # Alter x,y and z to 0 when unknown and before given timestamp and sum them up together:
     >>> unicode(sum((If(TIME > dt, v, unknown2zero(v)) for v in [Expression('x'), Expression('y'), Expression('z')]), zero))
     u'0,TIME,1354018500,GT,x,x,UN,0,x,IF,IF,+,TIME,1354018500,GT,y,y,UN,0,y,IF,IF,+,TIME,1354018500,GT,z,z,UN,0,z,IF,IF,+'
