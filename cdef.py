@@ -87,13 +87,13 @@ class Lesser(BinaryOperator):
 
 class If(Expression):
 
-    def __init__(self, condition, t, f):
+    def __init__(self, condition, then, else_):
         self.condition = condition
-        self.t = _coerce(t)
-        self.f = _coerce(f)
+        self.then = _coerce(then)
+        self.else_ = _coerce(else_)
 
     def __unicode__(self):
-        return u'%s,%s,%s,IF' % (self.condition, self.t, self.f)
+        return u'%s,%s,%s,IF' % (self.condition, self.then, self.else_)
 
 
 class Unknown(UnaryOperator):
