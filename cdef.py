@@ -101,6 +101,47 @@ class Unknown(UnaryOperator):
     operator = 'UN'
 
 
+class Ceil(UnaryOperator):
+
+    operator = 'CEIL'
+
+
+class Floor(UnaryOperator):
+
+    operator = 'FLOOR'
+
+
+class Min(BinaryOperator):
+
+    operator = 'MIN'
+
+
+class Max(BinaryOperator):
+
+    operator = 'MAX'
+
+
+# set operations
+
+class Minimum(UnaryOperator):
+
+    operator = 'MINIMUM'
+
+
+class Average(UnaryOperator):
+
+    operator = 'AVERAGE'
+
+
+class Maximum(UnaryOperator):
+
+    operator = 'MAXIMUM'
+
+
+class Last(UnaryOperator):
+
+    operator = 'LAST'
+
 TIME = Expression('TIME')
 UNKNOWN = Expression('UNKN')
 
