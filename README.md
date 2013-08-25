@@ -1,4 +1,4 @@
-rrd-cdef
+rrd-cdef [![Build Status](https://travis-ci.org/paluh/rrd-cdef.png?branch=master)](https://travis-ci.org/paluh/rrd-cdef) [![Coverage Status](https://coveralls.io/repos/paluh/rrd-cdef/badge.png)](https://coveralls.io/r/paluh/rrd-cdef)
 ========
 
 Trivial DSL for RRD CDEF epressions (http://oss.oetiker.ch/rrdtool/tut/cdeftutorial.en.html). I've covered only part of CDEF - if you need something more just add an issue or make pull request with your patch :-P
