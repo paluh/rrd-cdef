@@ -1,3 +1,4 @@
+import calendar
 import datetime
 from pytz import utc
 import unittest
@@ -28,7 +29,7 @@ class CdefExpressionsTestCase(unittest.TestCase):
                                  value,
                                  un2zero)
         self.assertEqual(unicode(alter_conditionally),
-                         u'TIME,1352895300,GT,value,value,UN,0,value,IF,IF')
+                         u'TIME,1352898900,GT,value,value,UN,0,value,IF,IF')
 
     def test_algebraic_expressions(self):
         expr = ((Expression(5) - Expression(2))/Expression(3) +

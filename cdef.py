@@ -1,15 +1,19 @@
+import calendar
 import datetime
-import time
 
 
 def _coerce(v):
     return v if isinstance(v, Expression) else Expression(v)
 
+def utctimestamp(dt):
+    return int(calendar.timegm(dt.utctimetuple()))
+
+
 class Expression(object):
 
     def __init__(self, value):
         if isinstance(value, datetime.datetime):
-            self.value = int(time.mktime(value.timetuple()))
+            self.value = utctimestamp(value)
         else:
             self.value = value
 
