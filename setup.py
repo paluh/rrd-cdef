@@ -11,6 +11,7 @@ setup(
     url='http://github.com/paluh/rrd-cdef',
     py_modules=['cdef'],
     description='Trivial DSL for RRD CDEFs.',
+    test_suite='tests',
     zip_safe=False,
     classifiers=[
         'License :: OSI Approved :: BSD License',

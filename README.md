@@ -1,9 +1,6 @@
 rrd-cdef
 ========
 
-OVERVIEW
---------
-
 Trivial DSL for RRD CDEF epressions (http://oss.oetiker.ch/rrdtool/tut/cdeftutorial.en.html). I've covered only part of CDEF - if you need something more just add an issue or make pull request with your patch :-P
 
 USAGE
