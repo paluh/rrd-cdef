@@ -7,6 +7,12 @@ from cdef import If, TIME, Unknown, Expression
 
 class CdefExpressionsTestCase(unittest.TestCase):
 
+    def test_comparison_operators(self):
+        value = Expression('value')
+        zero = Expression(0)
+        self.assertEqual(unicode(value > zero), 'value,0,GT')
+        self.assertEqual(unicode(value < zero), 'value,0,LT')
+
     def test_if_simple_statement(self):
         # basic cdef expression - replace 'unknown' value with 0
         value = Expression('value')

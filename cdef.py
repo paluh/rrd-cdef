@@ -20,6 +20,9 @@ class Expression(object):
     def __gt__(self, other):
         return Greater(self, other)
 
+    def __lt__(self, other):
+        return Lesser(self, other)
+
     def __add__(self, other):
         return Add(self, other)
 
@@ -145,6 +148,7 @@ class Maximum(UnaryOperator):
 class Last(UnaryOperator):
 
     operator = 'LAST'
+
 
 TIME = Expression('TIME')
 UNKNOWN = Expression('UNKN')
