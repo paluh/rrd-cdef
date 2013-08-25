@@ -19,7 +19,7 @@ class CdefExpressionsTestCase(unittest.TestCase):
         value = Expression('value')
         zero = Expression(0)
         un2zero = If(Unknown(value), zero, value)
-        n = datetime.datetime(2012, 11, 14, 13, 15)
+        n = datetime.datetime(2012, 11, 14, 13, 15, 0, 0)
         # a little bit more complex expression:
         # alter unknown values to zero only when measurement was done after
         # given timestamp
