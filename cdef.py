@@ -1,6 +1,8 @@
 import calendar
 import datetime
 
+__version__ = '0.1'
+
 
 def _coerce(v):
     return v if isinstance(v, Expression) else Expression(v)
